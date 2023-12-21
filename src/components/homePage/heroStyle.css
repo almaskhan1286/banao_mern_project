@@ -1,0 +1,62 @@
+.bg-image {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 440px;
+  background-repeat: no-repeat;
+}
+
+/* Overlay with linear gradient */
+.bg-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) {
+  .bg-image {
+    /* Adjust background properties for tablets */
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) {
+  .bg-image {
+    /* Adjust background properties for desktops */
+    height: 440px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .bg-image {
+    /* Adjust background properties for large desktops */
+    height: 440px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .bg-image {
+    /* Adjust background properties for extra-large desktops */
+    height: 440px;
+    background-size: cover;
+    background-position: center;
+  }
+}
